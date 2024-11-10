@@ -1,0 +1,94 @@
+.header_outer_container{
+  height: 10vh;
+  background: transparent;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  
+}
+
+.header_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 90%;
+  margin: auto;
+}
+.logo_box{
+  max-width: 10%;
+}
+.logo{
+  max-width: 60%;
+}
+.header_nav{
+  flex-grow: 1;
+  max-width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 1.4rem;
+}
+.header_nav li:hover{
+  cursor: pointer;
+  color: #A58A5A;
+
+  
+}
+
+.book_btn {
+   max-width: 15%;
+   padding: 1rem 2rem;
+   background-color:  #A58A5A;
+   font-size: 1.4rem;
+   border: none;
+   outline: none;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.book_btn svg{
+  font-size: 1.6rem;
+}
+.book_btn:hover{
+  background-color: #E5A84A;
+}
+
+
+
+
+
+@media(min-width:65em){
+  .book_btn{
+    max-width: 15%;
+  }
+ 
+}
+
+
+@media (min-width: 48em) and (max-width: 65em){
+  .book_btn{
+    max-width: 25%;
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+  }
+  .header_nav{
+    font-size: 1.2rem;
+  }
+  .header_container{
+    max-width: 96%;
+    margin: auto;
+  }
+
+}
+
+@media (min-width: 16em) and (max-width: 48em){
+  .header-nav{
+    display: none;
+  }
+  
+}
+
