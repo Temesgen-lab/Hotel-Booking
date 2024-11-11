@@ -1,11 +1,11 @@
 .header_outer_container{
   height: 10vh;
-  background: transparent;
+  /* background-color: #ffffff00; */
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  /* background-color: black; */
   
 }
 
