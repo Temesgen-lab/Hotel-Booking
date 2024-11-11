@@ -18,7 +18,14 @@
   margin: auto;
 }
 .logo_box{
-  max-width: 10%;
+  /* max-width: 10%; */
+  background-image: url(./img/hotel-logo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 7vh;
+  
+  width:10%;
 }
 .logo{
   max-width: 60%;
@@ -56,6 +63,49 @@
 .book_btn:hover{
   background-color: #E5A84A;
 }
+.menu_icon{
+  display: none;
+}
+
+.mobile_nav_container{
+   height: 100vh;
+   background-color: #000000c4;
+   width:100%;
+   position: absolute;
+   top:0;
+   left: 0;
+   z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+}
+.mobile_nav_container ul{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+  list-style: none;
+}
+.mobile_nav_container li:hover{
+  color: #E5A84A;
+  cursor: pointer;
+}
+.closeIcon{
+  position: absolute;
+  top: 5rem;
+  right:5rem;
+  color:#fff;
+  font-size: 3rem !important;
+  font-weight: 700;
+  z-index: 101;
+}
+.closeIcon:hover{
+  cursor: pointer;
+}
+.menu_icon:hover{
+  cursor: pointer;
+}
 
 
 
@@ -86,9 +136,21 @@
 }
 
 @media (min-width: 16em) and (max-width: 48em){
-  .header-nav{
+  .header_nav{
     display: none;
   }
+  .menu_icon{
+    display: block;
+  }
+  .book_btn{
+    max-width: 30%;
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+  }
+  .logo_box{
+    width: 20%;
+  }
+  
   
 }
 
