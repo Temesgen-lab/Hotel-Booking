@@ -15,7 +15,7 @@
 .carousel{
     height: 90vh;
     animation:zoom-in-out 50s infinite;
-    filter: brightness(50%);
+    filter: brightness(70%);
 }
 
 @keyframes zoom-in-out {
