@@ -1,3 +1,67 @@
-.carousel{
+/* .overlay{
     height: 100vh;
+    background-image: linear-gradient(to bottom , #00000044, #000000a4);
+    z-index: 4;
+    position: absolute;
+    width: 100%;
+    top:0;
+    left: 0;
+} */
+.carousel_box{
+    position: relative;
+    overflow: hidden;
+    
+  
+}
+.carousel{
+    height: 90vh;
+    animation:zoom-in-out 50s infinite;
+    filter: brightness(50%);
+}
+
+@keyframes zoom-in-out {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.hero_desc{
+   text-transform: capitalize;
+    color: #fff;
+    z-index: 5;
+    font-size: 2.6rem;
+    font-weight: 600;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+     
+      
+}
+
+.banner_content{
+    position: absolute;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap:10rem;
+    
+}
+.banner_form{
+      display: flex;
+      gap:2rem;
+}
+
+.check_input{
+    padding: 2rem 3rem;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 2erm;
+    outline: none;
 }

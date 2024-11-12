@@ -1,11 +1,11 @@
 .header_outer_container{
   height: 10vh;
   /* background-color: #ffffff00; */
-  color: #fff;
+  color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: black; */
+  background-color: #ffffff;
   
 }
 
@@ -37,11 +37,11 @@
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .header_nav li:hover{
   cursor: pointer;
-  color: #A58A5A;
+  color: #e05210;
 
   
 }
@@ -49,19 +49,20 @@
 .book_btn {
    max-width: 15%;
    padding: 1rem 2rem;
-   background-color:  #A58A5A;
+   background-color:  #E4A853;
    font-size: 1.4rem;
    border: none;
    outline: none;
    display: flex;
    align-items: center;
    justify-content: space-between;
+   border-radius: 2rem;
 }
 .book_btn svg{
   font-size: 1.6rem;
 }
 .book_btn:hover{
-  background-color: #E5A84A;
+  background-color: #fc9906;
 }
 .menu_icon{
   display: none;
