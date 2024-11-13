@@ -6,9 +6,11 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import SpaIcon from '@mui/icons-material/Spa';
 
 
+
 function About() {
     return <>
     <div className={style.about_outer_container}>
+      
       <div className={style.about_container}>
         <div className={style.about_box}>
             <FavoriteIcon className={style.about_icon}/>
