@@ -1,9 +1,30 @@
- .about_container{
+
+.about_outer_container {
+  background-color: rgba(252, 164, 1, 0.671) !important;
+  padding-bottom: 20rem;
+  position: relative;
+}
+.about_outer_container::before{
+content:'';
+display: block;
+width: 600px;
+height: 600px;
+background: repeating-linear-gradient(
+    0deg, /* horizontal dots */
+    #000, 
+    #000 10px, /* black dots size */
+    transparent 10px, /* transparent space after the dots */
+    transparent 20px /* transparent space, setting the total pattern interval */
+  );
+}
+.about_container{
+    position:relative;
+
     max-width:70%;
-    margin:auto;
-    padding: 4rem;
-    background-color: #fca401;
-    border:1px solid #fc7506;
+    margin:-12rem auto 0 auto;
+    padding: 16rem 4rem 4rem 4rem;
+    background-color: rgba(252, 164, 1, 0.685) !important;
+    /* border:1px solid #fc7506; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
      gap:5rem;
@@ -38,4 +59,6 @@
  .about_desc{
     font-size:1.6rem;
     color:#112A46;
+    width:80%;
+    align-self:center;
  }

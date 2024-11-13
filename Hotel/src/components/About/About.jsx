@@ -8,13 +8,14 @@ import SpaIcon from '@mui/icons-material/Spa';
 
 function About() {
     return <>
+    <div className={style.about_outer_container}>
       <div className={style.about_container}>
         <div className={style.about_box}>
             <FavoriteIcon className={style.about_icon}/>
             <h3 className={style.about_title}>Customer Satisfaction</h3>
             <p className={style.about_desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Neque laudantium quis aspernatur libero totam 
-                facere, eos officia nesciunt voluptate</p>
+                facere</p>
         </div>
          <div className={style.about_box}>
          <WashIcon className={style.about_icon}/>
@@ -22,23 +23,23 @@ function About() {
         
           <p className={style.about_desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Neque laudantium quis aspernatur libero totam 
-                facere, eos officia nesciunt voluptate</p>
+                facere</p>
         </div>
         <div className={style.about_box}>
             <TextIcon className={style.about_icon} />
              <h3 className={style.about_title}>Efficient Communication</h3>
              <p className={style.about_desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Neque laudantium quis aspernatur libero totam 
-                facere, eos officia nesciunt voluptate</p>
+                facere</p>
         </div>
         <div className={style.about_box}>
                   <SpaIcon className={style.about_icon} />
            <h3 className={style.about_title}>Sustainable Practices</h3>
            <p className={style.about_desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Neque laudantium quis aspernatur libero totam 
-                facere, eos officia nesciunt voluptate</p>
+                facere</p>
         </div>
-      </div>
+      </div></div>
     </>
 }
 
