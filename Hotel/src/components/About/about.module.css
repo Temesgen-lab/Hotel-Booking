@@ -1,0 +1,41 @@
+ .about_container{
+    max-width:70%;
+    margin:auto;
+    padding: 4rem;
+    background-color: #fca401;
+    border:1px solid #fc7506;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+     gap:5rem;
+  justify-items: center;
+  align-items: center;
+ }
+ .about_box{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+ }
+ .about_icon{
+    color:#112A46;
+    margin-bottom:2rem;
+    padding:30px;
+    border-radius:70px;
+    border:1px dashed #112A46;
+    transition:all 0.3s;
+    font-size:3rem !important;
+ }
+ .about_icon:hover{
+    background-color: #112A46;
+    fill:#fca401 !important;
+ }
+
+ .about_title{
+    font-size:2rem;
+    color:#112A46;
+    margin-bottom:1rem;
+ }
+ .about_desc{
+    font-size:1.6rem;
+    color:#112A46;
+ }
