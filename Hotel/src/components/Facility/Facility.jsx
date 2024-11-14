@@ -1,5 +1,5 @@
 import React from "react";
-import data from './img/data';
+import datas from './img/data';
 import FacilityCard from "./FacilityCard";
 import style from './facility.module.css'
 
@@ -17,9 +17,9 @@ return <>
   </div>
 <div className={style.facility_box}>
     {
-        data.map((img,index)=>{
+        datas.map((data,index)=>{
 
-            return <FacilityCard imgPath={img} key={index}/>
+     return <FacilityCard imgPath={data.img} key={index} facilityName={data.name}/>
         })
     }</div></div>
 </>    
