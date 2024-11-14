@@ -1,0 +1,43 @@
+.facility_container{
+    width:90%;
+    margin:9.6rem auto;
+}
+.facility_box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+  
+}
+.img_box{
+    
+    padding: 2rem;
+    
+    box-shadow: 0 0 10px 3px #0000004f;
+}
+.img{
+    width: 100%;
+    height:100%;
+}
+.facility_heading{
+    margin-bottom: 8rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.facility_sub_title{
+    display: block;
+    text-transform: uppercase;
+    color:#FC9906;
+    font-weight: 600;
+}
+.facility_title{
+    text-transform: capitalize;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.facility_desc{
+    font-size: 1.6rem;
+    width:60%;
+    text-align: center;
+}

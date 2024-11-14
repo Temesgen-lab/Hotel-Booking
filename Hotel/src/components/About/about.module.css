@@ -12,7 +12,7 @@
     max-width:70%;
     margin:-12rem auto 0 auto;
     padding:4rem;
-    background-color: #ffffff !important;
+    background-color: #fff !important;
     /* border:1px solid #fc7506; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -53,4 +53,5 @@
     color:#112A46;
     width:80%;
     align-self:center;
+    text-align: center;
  }
