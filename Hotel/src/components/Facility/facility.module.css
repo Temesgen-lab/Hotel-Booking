@@ -9,7 +9,7 @@
   
 }
 .img_box{
-padding: 2rem;
+
 box-shadow: 0 0 10px 3px #0000004f;
 position:relative;
 box-sizing:content-box !important;
@@ -23,12 +23,12 @@ box-sizing:content-box !important;
 .img_box::before{
     content: '';
     display:block;
-    width: 91%;
-    height: 89%;
+    width: 100%;
+    height: 100%;
     position:absolute;
     top:0;
     left:0;
-    margin:2rem;
+    
     background-image:linear-gradient(to bottom,transparent,#112a46d2)
     }
 .facility_heading{
@@ -57,20 +57,23 @@ box-sizing:content-box !important;
 .content_box{
     position:absolute;
     color:#fff;
-    top:70%;
+    top:60%;
     left:10%;
     transition:all 0.3s;
     z-index:1000;
     width:80%;
+    padding-bottom:4rem;
+    transition:all 0.5s;
 }
-.content-box:hover{
-transform:tanslateY(-100%);
+.content_box:hover {
+top: 44%;
+cursor:pointer;
 }
 .content{
-    font-size:2rem;
-
+    font-size:1.8rem;
+     margin-bottom: 1rem;
 }
 .content_desc{
-    font-size:1.6rem;
+    font-size:1.2rem;
     
 }

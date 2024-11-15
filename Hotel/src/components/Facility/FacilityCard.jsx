@@ -8,7 +8,7 @@ function FacilityCard({imgPath,facilityName}) {
             <div className={style.content_box}>
                 <h3 className={style.content}>{facilityName}</h3>
                 <p className={style.content_desc}>Lorem ipsum,
-                    dolor sit amet consectetur adipisicing elit.sit amet consectetur adipisicing elit. </p>
+                    dolor sit amet consectetur adipisicing elit.sit amet consectetur. </p>
             </div>
               <img src={imgPath} alt="" className={style.img} />
          </div>

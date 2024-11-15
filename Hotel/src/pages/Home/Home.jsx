@@ -4,6 +4,7 @@ import Banner from '../../components/Banner/Banner.jsx';
 import Room from '../../components/Room/Room.jsx';
 import About from '../../components/About/About.jsx';
 import Facility from '../../components/Facility/Facility.jsx'
+import Testimonal from '../../components/Testimonials/Testimonal.jsx'
 function Home() {
   return (
     <div>
@@ -12,6 +13,7 @@ function Home() {
       <About />
       <Room />
       <Facility />
+      <Testimonal />
     </div>
   )
 }
