@@ -4,13 +4,14 @@ import WashIcon from '@mui/icons-material/Wash';
 import TextIcon from '@mui/icons-material/Textsms';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import SpaIcon from '@mui/icons-material/Spa';
+import img from '../Testimonials/img/pattern-1.png'
 
 
 
 function About() {
     return <>
     <div className={style.about_outer_container}>
-      
+      <img src={img} alt="" className={style.dot} />
       <div className={style.about_container}>
         <div className={style.about_box}>
             <FavoriteIcon className={style.about_icon}/>

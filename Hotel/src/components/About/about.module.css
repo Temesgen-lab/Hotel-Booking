@@ -1,10 +1,9 @@
 
- /* .about_outer_container {
-  background-color: rgba(252, 164, 1, 0.671) !important; 
-  padding:10rem 0;
+ .about_outer_container {
+
   position: relative;
   
-}  */
+} 
 
 .about_container{
     position: relative;
@@ -54,4 +53,9 @@
     width:80%;
     align-self:center;
     text-align: center;
+ }
+ .dot{
+   position: absolute;
+   bottom: -10rem;
+   right: 10rem;
  }

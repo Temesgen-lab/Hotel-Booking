@@ -4,7 +4,8 @@ import Banner from '../../components/Banner/Banner.jsx';
 import Room from '../../components/Room/Room.jsx';
 import About from '../../components/About/About.jsx';
 import Facility from '../../components/Facility/Facility.jsx'
-import Testimonal from '../../components/Testimonials/Testimonal.jsx'
+import Testimonal from '../../components/Testimonials/Testimonal.jsx';
+import Contact from '../../components/Contact/Contact.jsx'
 function Home() {
   return (
     <div>
@@ -14,6 +15,7 @@ function Home() {
       <Room />
       <Facility />
       <Testimonal />
+      <Contact />
     </div>
   )
 }

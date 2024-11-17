@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState,useRef,useEffect } from "react";
 import TestimonalCard from "./TestimonalCard";
 import data from './img/data';
 import style from './testimonal.module.css'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 
 function Testimonal() {
-    return <>
+
+
+return <>
     <div className={style.testimonal_outer_container}>
         <div className={style.testimonal_left}>
           <h3 className={style.sub}>
