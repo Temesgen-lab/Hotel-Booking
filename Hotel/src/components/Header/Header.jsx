@@ -28,8 +28,30 @@ useEffect(() => {
     document.body.style.overflow = 'auto'; // Reset overflow to 'auto' on cleanup
   };
 }, [isClicked]); 
+
+const [isSticky, setIsSticky] = useState(false);
+
+// Effect to track scroll position
+useEffect(() => {
+  const handleScroll = () => {
+    // Check if the scroll position is greater than 50px (you can adjust this)
+    if (window.scrollY > 200) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  // Listen to scroll events
+  window.addEventListener('scroll', handleScroll);
+
+  // Cleanup the event listener when the component unmounts
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
   return (<div>
-    <div className={style.header_outer_container}>
+    <div className={isSticky?`${style.header_outer_container} ${style.sticky}`:style.header_outer_container}>
       <nav className={style.header_container}>
         <p className={style.menu_icon} onClick={clickHandler}> <MenuIcon /> </p>
         <div className={style.logo_box}>
