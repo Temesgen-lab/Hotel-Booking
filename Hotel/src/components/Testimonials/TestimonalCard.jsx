@@ -4,6 +4,9 @@ import style from './testimonal.module.css';
 import Rating from '@mui/material/Rating';
 
 function TestimonalCard({image,comment,name,career}) {
+
+         
+       
     return <>
 <div className={style.testimonal_box}>
   <Rating value={5} />

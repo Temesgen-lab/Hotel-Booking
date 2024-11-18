@@ -107,3 +107,8 @@ position: relative;
     grid-template-columns: repeat(2,1fr);
   }
 }
+@media(max-width: 40em){
+  .rooms_container{
+    grid-template-columns: 1fr;
+  }
+}

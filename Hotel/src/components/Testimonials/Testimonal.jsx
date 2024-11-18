@@ -8,6 +8,32 @@ import { Carousel } from 'react-responsive-carousel';
 
 function Testimonal() {
 
+  
+    const sliderRef = useRef(null);
+
+  
+    const scrollHandler = () => {
+        if (sliderRef.current) {
+            
+            sliderRef.current.scrollLeft += 100;
+
+            
+            if (sliderRef.current.scrollLeft >= sliderRef.current.scrollWidth - sliderRef.current.clientWidth) {
+                sliderRef.current.scrollLeft = 0; 
+            }
+        }
+    };
+
+    useEffect(() => {
+      
+        const intervalId = setInterval(scrollHandler, 3000);
+
+    
+        return () => clearInterval(intervalId);
+    }, []);
+
+
+
 
 return <>
     <div className={style.testimonal_outer_container} id="testimonials">
@@ -22,7 +48,7 @@ return <>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
 </p>
         </div>
-        <div className={style.testimonal_right}>
+        <div className={style.testimonal_right} id="slider" ref={sliderRef}>
          {data.map((testimonal,index)=>{
             return <TestimonalCard image={testimonal.image}
             comment={testimonal.comment}

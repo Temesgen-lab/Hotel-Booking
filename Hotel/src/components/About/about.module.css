@@ -76,7 +76,7 @@
      }
 
  }
- @media(max-width:37em){
+ @media(max-width:40em){
    .about_container{
       grid-template-columns: 1fr;
    }

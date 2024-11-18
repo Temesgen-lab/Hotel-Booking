@@ -14,11 +14,11 @@
 .testimonal_right{
     display:flex;
     overflow-x:scroll;
-   
+    
     flex-basis: 60%;
 }
 .testimonal_right::-webkit-scrollbar{
-    /* display:none; */
+    display:none;
 }
 .testimonal_box{
     display:flex;

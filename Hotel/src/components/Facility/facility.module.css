@@ -58,23 +58,38 @@ box-sizing:content-box !important;
 .content_box{
     position:absolute;
     color:#fff;
-    top:60%;
+    top:70%;
     left:10%;
     transition:all 0.3s;
     z-index:1000;
     width:80%;
-    padding-bottom:4rem;
+    padding-bottom:8rem;
     transition:all 0.5s;
 }
 .content_box:hover {
-top: 44%;
+top: 50%;
 cursor:pointer;
 }
 .content{
-    font-size:1.8rem;
+    font-size:2rem;
      margin-bottom: 1rem;
+     text-transform: uppercase;
+     font-family: serif;
+     
+
 }
 .content_desc{
-    font-size:1.2rem;
+    font-size:1.3rem;
     
+}
+@media(max-width:60em){
+    .facility_box{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+@media(max-width:40em){
+    .facility_box{
+        grid-template-columns: 1fr;
+    }
 }
