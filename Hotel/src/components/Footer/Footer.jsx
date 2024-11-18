@@ -10,11 +10,11 @@ function Footer() {
     return <>
     <div className={style.footer_container}>
          <div className={style.footer_icon}>
-            <FacebookIcon />
-            <WhatsAppIcon />
-            <TelegramIcon />
-            <XIcon />
-            <LinkedInIcon />
+            <FacebookIcon className={style.icon}/>
+            <WhatsAppIcon className={style.icon}/>
+            <TelegramIcon className={style.icon}/>
+            <XIcon className={style.icon}/>
+            <LinkedInIcon className={style.icon}/>
          </div>
          <p className={style.copyright}>
                &copy; 2024 Hotel template | all rights reserved

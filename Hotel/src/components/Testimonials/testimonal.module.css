@@ -68,3 +68,28 @@
 .desc{
     font-size:1.6rem;
 }
+@media(max-width:60em){
+    .testimonal_box{
+        width: 90%;
+    }
+    .title{
+        font-size:3.6rem
+    }
+}
+@media(max-width:40em){
+    .testimonal_outer_container{
+       display: flex;
+       flex-direction: column;
+    }
+    .title{
+        font-size:3rem
+    }
+    .sub{
+        font-size: 1.6rem;
+       
+    }
+    .desc{
+       display: none;
+    }
+}
+

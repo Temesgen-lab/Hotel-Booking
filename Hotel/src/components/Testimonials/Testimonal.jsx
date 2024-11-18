@@ -26,7 +26,7 @@ function Testimonal() {
 
     useEffect(() => {
       
-        const intervalId = setInterval(scrollHandler, 3000);
+        const intervalId = setInterval(scrollHandler, 2000);
 
     
         return () => clearInterval(intervalId);

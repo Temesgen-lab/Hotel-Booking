@@ -92,4 +92,7 @@ cursor:pointer;
     .facility_box{
         grid-template-columns: 1fr;
     }
+    .facility_desc{
+        display: none;
+    }
 }
