@@ -101,3 +101,9 @@ position: relative;
 .rate{
   color:#FC9906;
 }
+
+@media(max-width: 60em){
+  .rooms_container{
+    grid-template-columns: repeat(2,1fr);
+  }
+}

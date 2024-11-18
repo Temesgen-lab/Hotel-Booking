@@ -4,7 +4,7 @@ import WashIcon from '@mui/icons-material/Wash';
 import TextIcon from '@mui/icons-material/Textsms';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import SpaIcon from '@mui/icons-material/Spa';
-import img from '../Testimonials/img/pattern-1.png'
+import img from './pattern-1.png'
 
 
 
