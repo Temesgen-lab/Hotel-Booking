@@ -1,6 +1,7 @@
 .room_outer_container{
   max-width:90%;
-  margin:10rem auto;
+  padding:7rem 0;
+  margin: auto;
 }
 .rooms_container{
   display: grid;

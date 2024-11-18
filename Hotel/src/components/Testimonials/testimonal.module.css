@@ -1,7 +1,8 @@
 .testimonal_outer_container{
     display:flex;
     width: 90%;
-    margin:10rem auto;
+    margin:auto;
+    padding: 7rem 0;
     
 }
 .testimonal_left{

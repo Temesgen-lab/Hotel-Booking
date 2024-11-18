@@ -10,7 +10,7 @@ import img from '../Testimonials/img/pattern-1.png'
 
 function About() {
     return <>
-    <div className={style.about_outer_container}>
+    <div className={style.about_outer_container} id='about'>
       <img src={img} alt="" className={style.dot} />
       <div className={style.about_container}>
         <div className={style.about_box}>

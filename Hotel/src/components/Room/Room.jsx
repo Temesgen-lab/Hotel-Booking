@@ -6,7 +6,7 @@ import data from './img/data'
 function Room() {
     console.log(data)
     return <>
-    <div className={style.room_outer_container}>
+    <div className={style.room_outer_container} id='rooms'>
        <div className={style.room_heading}>
         <h2 className={style.room_title}>our <span>rooms</span></h2>
         <p> <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span> </p>

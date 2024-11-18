@@ -6,7 +6,7 @@ import PhoneIcon from '@mui/icons-material/LocalPhone';
 
 function Contact() {
     return <>
-       <div className={style.contact_outer_container}>
+       <div className={style.contact_outer_container} id='contact'>
         <div className={style.contact_heading}>
         <h1 className={style.contact_title}>
             contact <span>us</span>

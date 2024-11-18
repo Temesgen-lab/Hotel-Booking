@@ -1,6 +1,7 @@
 .facility_container{
     width:90%;
-    margin:9.6rem auto;
+    margin:auto;
+    padding: 10rem 0;
 }
 .facility_box{
     display: grid;

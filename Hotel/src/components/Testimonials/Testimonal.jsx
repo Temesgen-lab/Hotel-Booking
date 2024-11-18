@@ -10,7 +10,7 @@ function Testimonal() {
 
 
 return <>
-    <div className={style.testimonal_outer_container}>
+    <div className={style.testimonal_outer_container} id="testimonials">
         <div className={style.testimonal_left}>
           <h3 className={style.sub}>
              testimonials

@@ -1,6 +1,7 @@
 .contact_outer_container{
     width:80%;
-    margin:10rem auto;
+    margin:auto;
+    padding: 7rem 0;
 }
 .contact_title{
     text-transform:uppercase;

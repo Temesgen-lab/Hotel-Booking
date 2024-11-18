@@ -6,7 +6,7 @@ import style from './facility.module.css'
 function Facility() 
 {
 return <>
-<div className={style.facility_container}>
+<div className={style.facility_container} id="facility">
   <div className={style.facility_heading}>
       <span className={style.facility_sub_title}>our facilities</span>
       <h3 className={style.facility_title}>explore the hotel</h3>

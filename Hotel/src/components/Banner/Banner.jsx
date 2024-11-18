@@ -5,8 +5,13 @@ import { Carousel } from 'react-responsive-carousel';
 import data from './img/data'
 
 function Banner() {
-    const dateInputRef = useRef(null); // Reference to the date input
-
+    
+    function picker(event) {
+      
+        const inputElement = event.target;
+        
+        inputElement.showPicker();
+    }
 
     return (
         <>
@@ -26,12 +31,12 @@ function Banner() {
                <p className={style.hero_desc}>make yourself at home in our hotel</p>
                <div className={style.banner_form}>
                 <div className={style.input_box} >
-                <label htmlFor="check_in" className={style.input_label}>check in: <span>👇👇👇</span></label><br />
-                <input type="date"  placeholder='check in' className={style.check_input} id={style.check_in}/></div>
+                <label htmlFor="check_in" className={style.input_label}>check in:</label><br />
+                <input type="date"  placeholder='check in' className={style.check_input} id={style.check_in} onClick={picker}/></div>
                 <div className={style.input_box} >
                    
-                <label htmlFor="check_out" className={style.input_label}>check out: <span>👇👇👇</span></label> <br />
-                <input type="date" placeholder='check out' className={style.check_input} id={style.check_out}/></div>
+                <label htmlFor="check_out" className={style.input_label}>check out: </label> <br />
+                <input type="date" placeholder='check out' className={style.check_input} id={style.check_out} onClick={picker}/></div>
                 <select name="" id="" className={style.select}>
                 <option value="6" selected>adults </option>
                     <option value="1">1</option>
