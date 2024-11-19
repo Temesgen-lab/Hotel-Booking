@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashie Hotel - React Template Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <style>
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #112A46;
+    color: white;
+    padding: 10px 0;
+    border-bottom: 2px solid #e05210;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.live-preview-btn {
+    background-color: #e05210;
+    color: white;
+    font-size: 1em;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.live-preview-btn:hover {
+    background-color: #fca401;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+    margin-top: 20px;
+}
+
+section h2 {
+    color: #e05210;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: #112A46;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Contact Info Section */
+#contact-info {
+    background-color: #112A46;
+    color: white;
+    padding: 40px 0;
+}
+
+#contact-info a {
+    color: #fca401;
+    text-decoration: none;
+}
+
+#contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #112A46;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* General Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .live-preview-btn {
+        margin-top: 10px;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+/* General Styles for Licensing Section */
+#licensing-info {
+  background-color: #f9f9f9;
+  padding: 40px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.8;
+}
+
+/* Heading Styles */
+#licensing-info h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e05210;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+/* Paragraph Styles */
+#licensing-info p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* List Styles */
+#licensing-info ul {
+  list-style: disc;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 16px;
+}
+
+#licensing-info ul li {
+  margin-bottom: 10px;
+}
+
+/* Link Styles */
+#licensing-info a {
+  color: #e05210;  /* Primary color */
+  text-decoration: none;
+}
+
+#licensing-info a:hover {
+  text-decoration: underline;
+  color: #c24e0d;  /* Darker shade on hover */
+}
+
+/* Styling for Third-Party Libraries and Dependencies */
+#licensing-info .third-party-libraries {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+
+#licensing-info .third-party-libraries h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+#licensing-info .third-party-libraries ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+#licensing-info .third-party-libraries ul li {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* Support Section Styles */
+#licensing-info .support {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+#licensing-info .support h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#licensing-info .support ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+#licensing-info .support ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Additional Terms & Conditions Section */
+#terms-conditions {
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+#terms-conditions h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#terms-conditions p {
+  font-size: 16px;
+  color: #333;
+}
+
+
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <h1 class="logo">Ashie Hotel</h1>
+                <button class="live-preview-btn" onclick="window.open('https://your-preview-link.com', '_blank')">Live Preview</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section id="overview">
+        <div class="container">
+            <h2>Overview</h2>
+            <p><strong>Template Name:</strong> Ashie Hotel</p>
+            <p><strong>Purpose:</strong> A fully responsive hotel template designed to manage booking systems and provide a seamless experience for both hotel staff and customers.</p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Fully Responsive Layout</li>
+                <li>Reusable Components</li>
+                <li>Customizable Themes</li>
+                <li>Booking Form Integration</li>
+                <li>UI Elements</li>
+                <li>Clean and Organized Code</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Installation Guide Section -->
+    <section id="installation-guide">
+        <div class="container">
+            <h2>Installation Guide</h2>
+            <p>Follow these steps to install and run Ashie Hotel template locally:</p>
+            <ul>
+                <li><strong>Step 1:</strong> Download and extract the template ZIP file.</li>
+                <li><strong>Step 2:</strong> Open the project in your code editor.</li>
+                <li><strong>Step 3:</strong> Install dependencies using <code>npm install</code>.</li>
+                <li><strong>Step 4:</strong> Run the template using <code>npm run dev</code>.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Customization Guide Section -->
+    <section id="customization-guide">
+        <div class="container">
+            <h2>Customization Guide</h2>
+            <p>To customize the Ashie Hotel template:</p>
+            <ul>
+                <li><strong>Favicon:</strong> Replace the file at <code>/public/hotel.ico</code>.</li>
+                <li><strong>Logo:</strong> Replace the image at <code>/src/components/header/img/hotel-logo.png</code>.</li>
+                <li><strong>Color Scheme & Fonts:</strong> Modify values in <code>/src/index.css</code>.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section id="contact-info">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or need further assistance, feel free to reach out:</p>
+            <ul>
+                <li>Email: <a href="mailto:temesgenazezew@gmail.com">temesgenazezew@gmail.com</a></li>
+                <li>Phone: +251 97 456 6918</li>
+                <li>Address: addis ababa,ethiopia</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Licensing Information Section -->
+<section id="licensing-info">
+    <div class="container">
+      <h2>Licensing Information</h2>
+  
+      <p>By purchasing the <strong>Ashie Hotel</strong> React Template, you are granted a license to use the template under the terms of the license. Please review the following information regarding the licensing and usage of the template:</p>
+  
+      <h3>License Type</h3>
+      <p>The <strong>Ashie Hotel</strong> template is sold under the following licenses:</p>
+  
+      <ul>
+        <li><strong>Regular License:</strong> The Regular License allows you to use the template for a single end product that can be used commercially or non-commercially. You can modify the template to suit your project needs, but it cannot be redistributed or resold.</li>
+        <li><strong>Extended License:</strong> The Extended License allows you to use the template in multiple projects or end products that you will redistribute or resell. Please refer to the theme marketplace (e.g., ThemeForest) for more details on this license.</li>
+      </ul>
+  
+      <h3>What is Included in the Template?</h3>
+      <p>The <strong>Ashie Hotel</strong> React Template includes the following:</p>
+      <ul>
+        <li>React Components</li>
+        
+        <li>CSS Stylesheets</li>
+        <li>Assets (Icons, Images, etc.)</li>
+        <li>Documentation</li>
+      </ul>
+  
+      <h3>Third-Party Libraries and Dependencies</h3>
+      <p>In the Ashie Hotel template, we use several open-source libraries and assets. Below is a list of third-party dependencies included in the template, along with their respective licenses:</p>
+  
+      <ul>
+        <li><strong>React</strong> - MIT License - <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React Official Website</a></li>
+        <li><strong>Vite</strong> - MIT License - <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">Vite Official Website</a></li>
+        <li><strong>Material UI Icons</strong> - MIT License - <a href="https://mui.com/material-ui/icons/" target="_blank" rel="noopener noreferrer">Material UI Icons Official Website</a></li>
+        <li><strong>Material UI Components</strong> - MIT License - <a href="https://mui.com/" target="_blank" rel="noopener noreferrer">Material UI Official Website</a></li>
+        <li><strong>Google Fonts</strong> - Open Font License - <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts Official Website</a></li>
+      </ul>
+  
+      <h3>License Restrictions</h3>
+      <p>The following activities are prohibited under both the Regular and Extended Licenses:</p>
+      <ul>
+        <li>You cannot redistribute the template as-is or with modifications to others as a template.</li>
+        <li>You cannot use the template for illegal activities or infringe upon the intellectual property of others.</li>
+        <li>You cannot sell or transfer the template as a stand-alone product without significant modification and without including additional value (e.g., as part of a larger project or end product).</li>
+      </ul>
+  
+      <h3>Template Support and Updates</h3>
+      <p>The template comes with basic support for bug fixes, minor updates, and assistance with installation. For any issues or questions, feel free to contact us:</p>
+      <ul>
+        <li>Email: <a href="mailto:temesgenazezew@gmail.com">temesgenazezew@gmail.com</a></li>
+        <li>Phone: +251 97 456 6918</li>
+        <li>Address: addis ababa,ethiopia</li>
+      </ul>
+  
+      <h3>How to Get Updates</h3>
+      <p>Updates to the Ashie Hotel template will be released periodically. All updates will be provided for free to buyers of the template. You will be notified of any new updates via email, or you can check the template’s marketplace page for the latest version.</p>
+  
+      <p>If you have any questions regarding the template or the license, please feel free to <a href="mailto:support@ashiehotel.com">contact us</a> directly.</p>
+    </div>
+  </section>
+  
+  <!-- Optional Section for "Terms & Conditions" or "Additional Legal Information" -->
+  <section id="terms-conditions">
+    <div class="container">
+      <h2>Additional Terms & Conditions</h2>
+      <p>For full terms and conditions regarding the usage and licensing of the Ashie Hotel template, please refer to the full license agreement available on the marketplace page where you purchased the template (e.g., ThemeForest).</p>
+    </div>
+  </section>
+  
+  
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ashie Hotel Template - All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
