@@ -1,0 +1,143 @@
+.contact_outer_container{
+    width:80%;
+    margin:auto;
+    padding: 7rem 0;
+}
+.contact_title{
+    text-transform:uppercase;
+    font-size:3.2rem;
+    padding:3rem;
+    text-align:center;
+    padding-bottom: 3rem;
+    
+}
+.contact_title span{
+    color:var(--secondary-color);
+}
+.contact_desc{
+    font-size: 1.8rem;
+    width:60%;
+    text-align: center;
+    padding-bottom: 3rem;
+    
+}
+.contact_container{
+    display: flex;
+    gap:3rem;
+}
+.contact_container form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    flex-basis: 60%;
+    gap: 3rem;
+}
+.contact_heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact_right{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+}
+form input,textarea{
+   
+    outline: none;
+    border:1px solid #0000001c;
+    padding: 2rem;
+    font-size: 1.8rem;
+}
+textarea{
+    grid-row:3/4;
+    grid-column: 1/-1;
+}
+button{
+    grid-row: 4/5;
+    grid-column: 1/-1;
+    padding: 1.4rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: #fff;
+    outline: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    border:none;
+}
+input:focus,textarea:focus{
+    outline:1px solid var(--secondary-color);
+}
+button:hover{
+    cursor: pointer;
+    background-color: #083368;
+}
+.address_box{
+    display: flex;
+    gap:2rem;
+    padding: 2rem;
+    border: 1px solid #0000002a;
+}
+.email_box{
+    display: flex;
+    gap:2rem;
+    padding: 2rem;
+    border: 1px solid #0000002a;
+}
+.phone_box{
+    display: flex;
+    gap:2rem;
+    padding: 2rem;
+    border: 1px solid #0000002a;
+}
+.contact_icon{
+    font-size: 3rem !important;
+    fill:var(--secondary-color) !important;
+    padding: 1.4rem;
+    border: 1px solid var(--secondary-color);
+}
+.contact_icon:hover{
+    background-color: var(--secondary-color);
+    fill:var(--accent-color) !important;
+}
+.right_heading{
+    font-size: 1.6rem;
+    color:var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.right_desc{
+    font-size: 1.6rem;
+    color:#333;
+}
+
+@media(max-width:60em){
+    .contact_container{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+@media(max-width:40em){
+    .contact_container form{
+       
+        grid-template-columns:1fr;
+     
+       
+    }
+    textarea{
+        grid-row:5/6;
+        grid-column: 1/-1;
+    }
+    button{
+        grid-row: 6/7;
+        grid-column: 1/-1;
+        
+    }
+    .contact_desc{
+       display:none;
+        
+    }
+}
