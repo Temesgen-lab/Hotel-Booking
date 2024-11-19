@@ -12,7 +12,7 @@
     
 }
 .contact_title span{
-    color:#112A46;
+    color:var(--secondary-color);
 }
 .contact_desc{
     font-size: 1.8rem;
@@ -59,7 +59,7 @@ button{
     grid-column: 1/-1;
     padding: 1.4rem;
     text-align: center;
-    background-color: #112A46;
+    background-color: var(--secondary-color);
     color: #fff;
     outline: none;
     font-size: 1.8rem;
@@ -67,7 +67,7 @@ button{
     border:none;
 }
 input:focus,textarea:focus{
-    outline:1px solid #112A46;
+    outline:1px solid var(--secondary-color);
 }
 button:hover{
     cursor: pointer;
@@ -93,17 +93,17 @@ button:hover{
 }
 .contact_icon{
     font-size: 3rem !important;
-    fill:#112A46 !important;
+    fill:var(--secondary-color) !important;
     padding: 1.4rem;
-    border: 1px solid #112A46;
+    border: 1px solid var(--secondary-color);
 }
 .contact_icon:hover{
-    background-color: #112A46;
-    fill:#fca401 !important;
+    background-color: var(--secondary-color);
+    fill:var(--accent-color) !important;
 }
 .right_heading{
     font-size: 1.6rem;
-    color: #112A46;
+    color:var(--secondary-color);
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 1rem;

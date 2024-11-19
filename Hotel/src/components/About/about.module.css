@@ -29,27 +29,27 @@
     align-items: center;
  }
  .about_icon{
-    color:#112A46;
+    color:var(--secondary-color);
     margin-bottom:2rem;
     padding:30px;
     border-radius:70px;
-    border:1px dashed #112A46;
+    border:1px dashed var(--secondary-color);
     transition:all 0.3s;
     font-size:3rem !important;
  }
  .about_icon:hover{
-    background-color: #112A46;
-    fill:#fca401 !important;
+    background-color: var(--secondary-color);
+    fill:var(--accent-color) !important;
  }
 
  .about_title{
     font-size:2rem;
-    color:#112A46;
+    color:var(--secondary-color);
     margin-bottom:1rem;
  }
  .about_desc{
     font-size:1.6rem;
-    color:#112A46;
+    color:var(--secondary-color);
     width:80%;
     align-self:center;
     text-align: center;

@@ -2,7 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+:root {
+  --primary-color:  #e05210;  /* Primary color (example: coral red) */
+  --secondary-color: #112A46; /* Secondary color (example: dark blue) */
+  --accent-color: #fca401;    /* Accent color (example: gold) */
+  
+}
 
 * {
   margin: 0;

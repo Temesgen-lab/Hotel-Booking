@@ -76,7 +76,7 @@ position: relative;
   margin-bottom: 1rem;
 }
 .room_title span {
-  color:#FC9906;
+  color:var(--accent-color);
 }
 .room_heading p{
   font-size: 1.8rem;
@@ -87,7 +87,7 @@ position: relative;
   padding-top:1.6rem;
   content:'';
   display:block;
-  border-bottom: 4px solid #FC9906;
+  border-bottom: 4px solid var(--accent-color);
   width:8rem;
 }
 
@@ -99,7 +99,7 @@ position: relative;
   margin-bottom: 1rem;
 }
 .rate{
-  color:#FC9906;
+  color:var(--accent-color);
 }
 
 @media(max-width: 60em){

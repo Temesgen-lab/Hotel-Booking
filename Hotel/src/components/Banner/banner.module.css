@@ -1,12 +1,4 @@
-/* .overlay{
-    height: 100vh;
-    background-image: linear-gradient(to bottom , #00000044, #000000a4);
-    z-index: 4;
-    position: absolute;
-    width: 100%;
-    top:0;
-    left: 0;
-} */
+
 .carousel_box{
     position: relative;
     overflow: hidden;

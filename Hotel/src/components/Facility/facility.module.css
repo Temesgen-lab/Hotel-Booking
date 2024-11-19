@@ -42,7 +42,7 @@ box-sizing:content-box !important;
 .facility_sub_title{
     display: block;
     text-transform: uppercase;
-    color:#FC9906;
+    color:var(--accent-color);
     font-weight: 600;
 }
 .facility_title{

@@ -49,20 +49,20 @@
 }
 .name{
     font-size: 1.6rem;
-    color:#112A46;
+    color:var(--secondary-color);
 }
 .career{
-    color:#FC9906;
+    color:var(--accent-color);
 }
 .sub{
     font-size: 1.8rem;
-    color:#112A46;
+    color:var(--secondary-color);
     text-transform: uppercase;
 }
 .title{
     font-size: 5.2rem;
     text-transform: capitalize;
-    color:#112A46;
+    color:var(--secondary-color);
     
 }
 .desc{
